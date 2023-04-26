@@ -1,0 +1,293 @@
+/* Root */
+:root {
+    --primary: rgb(0, 100, 100);
+    --secondary: rgb(255, 87, 51);
+    --tertiary: rgb(255, 150, 70);
+}
+
+/* Global Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+header div {
+    box-shadow: 3px 3px 5px rgb(128, 128, 128);
+}
+
+header h1 {
+    color: var(--tertiary);
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--secondary);
+    padding: 5px;
+    border: 5px solid var(--tertiary);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav {
+    margin: 15px;
+}
+
+header nav ul li a {
+    padding: 10px;
+    font-size: 15px;
+    margin: 20px 20px 0 0;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 0;
+    border: 1px solid var(--tertiary);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer ul li {
+    font-weight: bold;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--tertiary);
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 0;
+    border: 1px solid var(--tertiary);
+}
+
+.contact-list {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("./images/DN\ Hero\ BG\ 2.avif");
+    height: 300px;
+    font-size: 50px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    height: 250px;
+}
+
+.hero .welcome {
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    color: var(--tertiary);
+}
+
+.hero .welcome #welcome {
+    font-size: 50px;
+}
+
+/* Card Title */
+.title {
+    border-right: 5px solid var(--tertiary);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 30px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    font-size: 45px;
+    text-align: center;
+}
+/* About Me */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 10px;
+}
+.about-me p {
+    font-size: 120%;
+    padding: 0 30px;
+    line-height: 1.5;
+    width: 80%;
+}
+
+/* Projects */
+.projects {
+    padding: 30px 0;
+    display: flex;
+    background-color: var(--primary);
+}
+
+.projects-grid-wrapper {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-grid {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fe);
+    gap: 5px;
+}
+
+.project {
+    border: solid;
+    color: var(--tertiary);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.project:hover {
+    opacity: 0.5;
+    background-color: var(--tertiary);
+}
+
+.project-card-title {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    padding: 10px;
+    border: 2px solid var(--tertiary)
+}
+/* Main Project */
+.horiseon {
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url(../assets/images/Webpage\ Screenshot.png);
+}
+
+.led-wall {
+    background-image: url("../assets/images/LED\ wall.jpeg");
+}
+
+.calculator {
+    background-image: url("../assets/images/Calculator.jpeg");
+}
+
+.pastel-puzzles {
+    background-image: url("../assets/images/pastel\ puzzle\ .jpeg");
+}
+
+.run-buddy {
+    background-image: url("../assets/images/run\ buddy.jpeg");
+}
+
+#contact-list {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .hero .welcome {
+        font-size: 30px;
+        padding-right: 20px;
+    }
+
+    .hero .welcome #welcome {
+        font-size: 35px;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+        line-height:1.5;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    header, .hero, .about-me, .projects {
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .title {
+        border-bottom: 2px solid var(--tertiary);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+
+}
+

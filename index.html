@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Snippet Cheatsheet</title>
+  <title>Derric Nguyen's Portfolio</title>
   <link rel="stylesheet" href="./assets/reset.css" />
   <link rel="stylesheet" href="./assets/style.css" />
 </head>
@@ -37,82 +37,113 @@
 
     <!-- Hero -->
     <section class="hero">
-        <h2>ASU Coding Bootcamp Student</h2>
+        <div>
+            <img src="./assets/images/Profile Pic.jpeg" alt="Derric Nguyen profile pic">
+        </div>
+        <div class="welcome">
+        <h2 id="welcome">Welcome!</h2>
+        </div>
     </section>
     <!-- End of Hero -->
 
     <!-- Main Content Sections/Flex Sections -->
 
     <!-- About Me Section/Row -->
-    <section id="about-me" class="section">
+    <section id="about-me" class="about-me">
     <!-- About Me Header -->
-        <div class="section-title">
+        <div class="title">
             <h2>About Me</h2>
         </div>
         <!-- About Me Content/paragraph -->
-        <div class="flex-row">
-            <img src="#" class="photo">
             <p>
-                Welcome! My name is Derric Nguyen and I am currently enrolled in ASU's Coding Bootcamp. Below, you can review the projects and progress I've made as a Developer along with my contact information. Enjoy!
+                Hello! My name is Derric Nguyen and I am currently enrolled in ASU's Coding Bootcamp. Below, you can review the projects and progress I've made as a Developer along with my contact information. 
             </p>
         </div>
     </section>
     <!-- End of About Me -->
     
     <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="projects" class="projects">
     <!-- Projects Header -->
-        <div class="section-title2">
+        <div class="title">
             <h2>Projects</h2>
         </div>
         <!-- Projects Content -->
-        <div class="flex-row2">
+        <div class="projects-grid-wrapper">
+            <div class="projects-grid">
+
             <!-- "Surf Report"/Main Project Content -->
-        <div class="main-project">
-            <div class="surf-report">
-                <p>
-                    <a href="#"> Main Place Holder Project</a>
-                    <br>
-                    <p1 size="-0.5">HTML/CSS</p1>
-                </p>
+                <a href="https://derricn2.github.io/Horiseon-Marketing-Webpage-Refactor/" target="_placeholder" class="project horiseon">
+                <div class="project-card-title">
+                    <h3> Horiseon </h3>
+                    <p>HTML/CSS</p>
+                </div>
+                </a>
+
+                <!-- Side Projects -->
+
+                <!-- "LED Wall" Project  -->
+                <a href="#" target="_placeholder" class="project led-wall">
+                    <div class="project-card-title">
+                        <h3> LED Wall </h3>
+                        <p>Node/IoT</p>
+                    </div>
+                </a>
+
+                <!-- "Calculator" Project -->
+                <a href="#" target="_placeholder" class="project calculator">
+                    <div class="project-card-title">
+                        <h3> Calculator </h3>
+                        <p>React/JavaScript/CSS</p>
+                    </div>
+                </a>
+
+                <!-- "Pastel Puzzles" Project -->
+                <a href="#" target="_placeholder" class="project pastel-puzzles">
+                <div class="project-card-title">
+                    <h3> Pastel Puzzles </h3>
+                    <p>MERN Stack</p>
+                </div>
+                </a>
+
+                <!-- "Run Buddy" Project -->
+                 <a href="#" target="_placeholder" class="project run-buddy">
+                <div class="project-card-title">
+                <h3> Run Buddy </h3>
+                <p>HTML/CSS</p>
+                </div>
+                </a>
             </div>
-        </div>
-        <!-- Side Projects -->
-        <div class="side-projects">
-            <!-- LED Wall Project -->
-            <div class="led-wall">
-                <p>
-                    <a href="#">2nd Place Holder Project</a>
-                    <br>
-                    <p1 size="-0.5">HTML/CSS</p1>
-                </p>
-            </div>
-            <!-- Calculator Project -->
-            <div class="calculator">
-                <p>
-                    <a href="#">3rd Place Holder Project</a>
-                    <br>
-                    <p1 size="-0.5">HTML/CSS</p1>
-                </p>
-            </div>
-            <!-- Pastel Puzzles Project -->
-            <div class="pastel-puzzles">
-                <p>
-                    <a href="#">4th Place Holder Project</a>
-                    <br>
-                    <p1 size="-0.5">HTML/CSS</p1>
-                </p>
-            </div>
-            <!-- Run Buddy Project -->
-            <div class="run-buddy">
-                <p>
-                    <a href="#">5th Place Holder Project</a>
-                    <br>
-                    <p1 size="-0.5">HTML/CSS</p1>
-                </p>
-            </div>
-        </div>
         </div>
     </section>
     <!-- End of Projects -->
+
+    <!-- Contact Me/Footer -->
+    <footer id="contact-info">
+        <!-- Contact Me title -->
+        <div class="title">
+            <h2>Contact Info</h2>
+        </div>
+        <!-- Contact Me content -->
+        <div class="contact-list">
+            <div id="contact-list">
+                <ul>
+                    <li>
+                    <a href="#">Call Me</a>
+                    </liv>
+                    <li> 
+                    <a href="mailto:placeholder@gmail.com">Email Me</a>
+                    </li>
+                    <li>
+                    <a href="#">LinkedIn</a>
+                    </li>
+                    <li>
+                <a href="https://github.com/derricn2">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Contact Me/Footer -->
+
 </body>
