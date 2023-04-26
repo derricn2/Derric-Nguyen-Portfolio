@@ -248,18 +248,18 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .hero .welcome {
         font-size: 30px;
         padding-right: 20px;
     }
 
     .hero .welcome #welcome {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .title h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .about-me p {
