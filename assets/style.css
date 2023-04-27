@@ -44,6 +44,8 @@ header h1 {
     border: 5px solid var(--tertiary);
 }
 
+/* Nav */
+
 header a {
     text-decoration: none;
     color: var(--tertiary);
@@ -110,13 +112,6 @@ footer ul li a:hover {
     color: var(--primary);
     border-radius: 0;
     border: 1px solid var(--tertiary);
-}
-
-.contact-list {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Hero */
@@ -220,7 +215,7 @@ footer ul li a:hover {
     padding: 10px;
     border: 2px solid var(--tertiary)
 }
-/* Main Project */
+/* Project Images Styling */
 .horiseon {
     grid-column: 1/3;
     grid-row: span 2;
@@ -243,10 +238,20 @@ footer ul li a:hover {
     background-image: url("../assets/images/run\ buddy.jpeg");
 }
 
+/* Contact Me content */
+
+.contact-list {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact-list {
     width: 50%;
 }
 
+/* Adjusting screen size for tablet */
 @media screen and (max-width: 768px) {
 
     .hero .welcome {
@@ -268,6 +273,9 @@ footer ul li a:hover {
     }
     
 }
+
+/* Adjusting screen size for phone */
+
 @media screen and (max-width: 575px) {
     header, .hero, .about-me, .projects {
         justify-content: center;
